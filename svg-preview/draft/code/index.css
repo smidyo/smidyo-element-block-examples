@@ -1,0 +1,23 @@
+#%%ELEMENT_BLOCK_ID%%-svg-preview {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    width: 100%;
+    background: #fafafa;
+    border-radius: 1rem;
+}
+
+#%%ELEMENT_BLOCK_ID%%-svg-measurements {
+    bottom: 0.5rem;
+    left: 0.5rem;
+    position: absolute;
+    background: #fafafa;
+    opacity: 0.5;
+    display: none;
+}
+
+#%%ELEMENT_BLOCK_ID%%-measurement-box {
+    stroke-width: 2px;
+    stroke: gray;
+    stroke-dasharray: 10px;
+}
