@@ -1,4 +1,4 @@
-#%%ELEMENT_BLOCK_ID%%-svg-preview {
+#__ELEMENT_BLOCK_ID__-svg-preview {
     display: flex;
     justify-content: center;
     height: 10rem;
@@ -7,7 +7,7 @@
     border-radius: 1rem;
 }
 
-#%%ELEMENT_BLOCK_ID%%-svg-measurements {
+#__ELEMENT_BLOCK_ID__-svg-measurements {
     bottom: 0.5rem;
     left: 0.5rem;
     position: absolute;
@@ -16,7 +16,7 @@
     display: none;
 }
 
-#%%ELEMENT_BLOCK_ID%%-measurement-box {
+#__ELEMENT_BLOCK_ID__-measurement-box {
     stroke-width: 2px;
     stroke: gray;
     stroke-dasharray: 10px;
