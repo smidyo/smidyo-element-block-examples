@@ -3,12 +3,22 @@
     {
       "dataShapeConstraint": {
         "type": "file-svg",
-        "list": false,
         "nullable": false
       },
       "name": "svg",
       "title": "SVG",
       "type": "STANDARD"
+    },
+    {
+      "dataShapeConstraint": {
+        "type": "text",
+        "list": false,
+        "nullable": false
+      },
+      "name": "measurement-unit",
+      "title": "Measurement unit",
+      "type": "STANDARD",
+      "limitToTextOptions": ["mm", "inches", "pt"]
     },
     {
       "dataShapeConstraint": {
@@ -54,14 +64,11 @@
   ],
   "outputs": [
     {
-      "dataShapeConstraint": {
-        "type": "file-svg",
-        "list": false,
-        "nullable": false
-      },
+      "dataShapeConstraint": {},
       "name": "viewed-svg",
       "title": "Viewed SVG",
-      "type": "STANDARD"
+      "type": "FOLLOWER",
+      "followInput": "svg"
     }
   ]
 }
