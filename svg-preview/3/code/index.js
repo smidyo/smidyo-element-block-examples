@@ -62,9 +62,9 @@
           const body =
             xmlVerIndex === -1
               ? svgBodies[index]
-              : svgBodies[index].slice(xmlVerIndex + 3);
+              : svgBodies[index].slice(xmlVerIndex + 2);
           previewElement.innerHTML = body;
-          const innerSVG = previewElement.firstChild;
+          const innerSVG = previewElement.firstElementChild;
           //@ts-ignore
           innerSVG.style.width = '100%';
           //@ts-ignore
