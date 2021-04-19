@@ -145,7 +145,9 @@
             measurementElement.innerHTML =
               convertUnit(bbox.width, drawingUnit, measurementUnit).toFixed(2) +
               ' × ' +
-              convertUnit(bbox.height, drawingUnit, measurementUnit).toFixed(2);
+              convertUnit(bbox.height, drawingUnit, measurementUnit).toFixed(2) +
+              ' ' +
+              measurementUnit;
             measurementElement.style.display = 'block';
           }
         };
