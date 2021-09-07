@@ -1,0 +1,74 @@
+{
+  "inputs": [
+    {
+      "dataShapeConstraint": {
+        "type": "file-svg",
+        "nullable": false
+      },
+      "name": "svg",
+      "title": "SVG",
+      "type": "STANDARD"
+    },
+    {
+      "dataShapeConstraint": {
+        "type": "text",
+        "list": false,
+        "nullable": false
+      },
+      "name": "measurement-unit",
+      "title": "Measurement unit",
+      "type": "STANDARD",
+      "limitToTextOptions": ["mm", "inches", "pt"]
+    },
+    {
+      "dataShapeConstraint": {
+        "type": "boolean",
+        "list": false,
+        "nullable": true
+      },
+      "name": "show-measurements",
+      "title": "Show measurements",
+      "type": "STANDARD"
+    },
+    {
+      "dataShapeConstraint": {
+        "type": "number",
+        "list": false,
+        "nullable": true
+      },
+      "name": "overlay-box-width",
+      "title": "Overlay box width",
+      "type": "STANDARD"
+    },
+    {
+      "dataShapeConstraint": {
+        "type": "number",
+        "list": false,
+        "nullable": true
+      },
+      "name": "overlay-box-height",
+      "title": "Overlay box height",
+      "type": "STANDARD"
+    },
+    {
+      "dataShapeConstraint": {
+        "type": "text",
+        "list": false,
+        "nullable": true
+      },
+      "name": "preview-size",
+      "title": "Preview size",
+      "type": "STANDARD",
+      "limitToTextOptions": ["small", "medium", "large"]
+    }
+  ],
+  "outputs": [
+    {
+      "dataShapeConstraint": {},
+      "name": "viewed-svg",
+      "title": "Viewed SVG",
+      "type": "FOLLOWER",
+      "followInput": "svg"
+    }
+  ]
+}
