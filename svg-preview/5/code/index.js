@@ -11,18 +11,18 @@
 
   const convertUnit = (measurement, from, to) => {
     const mm = {
-      cm: measurement / 10,
-      mm: measurement,
       in: measurement * 25.4,
-      pt: (measurement * 25.4) / 72,
-      px: (measurement * 25.4) / 96
+      cm: measurement * 10,
+      mm: measurement,
+      pt: measurement * 0.3527777778,
+      px: measurement * 0.2645833333
     }[from];
     return {
-      cm: mm * 10,
-      mm,
       in: mm / 25.4,
-      pt: (mm / 25.4) * 72,
-      px: (mm / 25.4) * 96
+      cm: mm / 10,
+      mm,
+      pt: mm / 0.3527777778,
+      px: mm / 0.2645833333
     }[to];
   };
 

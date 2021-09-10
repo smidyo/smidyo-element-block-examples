@@ -18,7 +18,7 @@
       "name": "measurement-unit",
       "title": "Measurement unit",
       "type": "STANDARD",
-      "limitToTextOptions": ["mm", "inches", "pt"]
+      "limitToTextOptions": ["mm", "in"]
     },
     {
       "dataShapeConstraint": {
