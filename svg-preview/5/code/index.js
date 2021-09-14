@@ -97,22 +97,22 @@
               null,
               'd',
               'M' +
-                overlayBoxOriginX +
-                ' ' +
-                overlayBoxOriginY +
-                ' L' +
-                (overlayBoxOriginX + bbWidth) +
-                ' ' +
-                overlayBoxOriginY +
-                ' L' +
-                (overlayBoxOriginX + bbWidth) +
-                ' ' +
-                (overlayBoxOriginY + bbHeight) +
-                ' L' +
-                overlayBoxOriginX +
-                ' ' +
-                (overlayBoxOriginY + bbHeight) +
-                ' Z'
+              overlayBoxOriginX +
+              ' ' +
+              overlayBoxOriginY +
+              ' L' +
+              (overlayBoxOriginX + bbWidth) +
+              ' ' +
+              overlayBoxOriginY +
+              ' L' +
+              (overlayBoxOriginX + bbWidth) +
+              ' ' +
+              (overlayBoxOriginY + bbHeight) +
+              ' L' +
+              overlayBoxOriginX +
+              ' ' +
+              (overlayBoxOriginY + bbHeight) +
+              ' Z'
             );
             innerSVG.insertBefore(boxPath, innerSVG.firstChild);
 
@@ -147,6 +147,7 @@
 
           if (showMeasurements) {
             measurementElement.innerHTML =
+              'Bounding box: ' +
               convertUnit(bbox.width, drawingUnit, measurementUnit).toFixed(2) +
               ' × ' +
               convertUnit(bbox.height, drawingUnit, measurementUnit).toFixed(2) +
